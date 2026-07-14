@@ -206,7 +206,16 @@
       }
     },
     onEnter: () => {
-      escenaVisible = -1; // fuerza la inicialización de la escena 1
+      escenaVisible = 1;
+    
+      escenas.forEach(e => {
+        e.classList.toggle(
+          "activa",
+          parseInt(e.dataset.escena, 10) === 1
+        );
+      });
+    
+      actualizarVisual(1);
     },
     onLeaveBack: () => {
       escenaVisible = -1;
