@@ -653,7 +653,7 @@ background:var(--negro-suave);
 
 .numero {
     display: block;
-    font-family: var(--entorno-mono);
+    font-family: var(--entorno-cuerpo);
     font-size: 2.4rem;
     color: var(--entorno-accent);
     font-weight: 600;
@@ -680,7 +680,7 @@ background:var(--negro-suave);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 4vh 2vw;
 }
 
