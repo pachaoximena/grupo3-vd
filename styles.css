@@ -1378,6 +1378,33 @@ background:var(--negro-suave);
     display: none;
 }
 
+.combo-final-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+
+.combo-final-calorias {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.combo-igual {
+    font-size: 4rem;
+    color: var(--blanco);
+}
+
+
+.combo-final-km {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .combo-texto-capa {
     position: absolute;
     bottom: 18%;
