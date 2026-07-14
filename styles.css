@@ -1153,7 +1153,7 @@ background:var(--negro-suave);
 #p-expansion-cierre {
      font-family: var(--fuente-titulo);
      background: var(--negro-suave);
-     min-height: 100vh;
+     min-height: 60vh;
      display:flex;
      justify-content:center;
      align-items:center;
@@ -1180,7 +1180,7 @@ background:var(--negro-suave);
 }
 
 @media (max-width: 640px) {
-    .expansion-scroll-espaciador { height: 500vh; }
+    .expansion-scroll-espaciador { height: 280vh; }
     .expansion-sticky-wrap { gap: 1rem; padding: 1.2rem 0.8rem; }
     .expansion-mapa-contenedor { max-width: 90vw; }
     .expansion-tarjeta { width: min(320px, 90vw); left: 50%; right: auto; transform: translateX(-50%); }
