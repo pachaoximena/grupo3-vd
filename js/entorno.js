@@ -35,8 +35,7 @@
   };
 
   const LABELS = [
-    "Minutos promedio dedicados a cocinar por día", ,
-    "Población según entorno alimentario cercano"
+    "Minutos promedio dedicados a cocinar por día"
   ];
 
   /* ----------------------------------------------------------
