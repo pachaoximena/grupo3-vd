@@ -592,7 +592,8 @@ background:var(--negro-suave);
     display: flex;
     align-items: center;
     position: relative;
-    padding-left: 5vw;
+    padding-left: 3.5vw;
+    padding-right: 5vw;
 }
 
 .entorno-rail {
@@ -689,7 +690,8 @@ background:var(--negro-suave);
     letter-spacing: .04em;
     color: var(--entorno-ink-soft);
     text-align: center;
-    margin-bottom: 1.25rem;
+    margin-top: 30px;
+    margin-bottom: 35px;
     min-height: 1.4em;
     transition: opacity .4s ease;
 }
@@ -727,9 +729,9 @@ background:var(--negro-suave);
 }
 
 .entorno-section .axis text {
-    font-family: var(--entorno-cuerpo);
+    font-family: var(--entorno-mono);
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
     fill: var(--negro-suave);
 }
 
