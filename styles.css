@@ -46,15 +46,15 @@
     --acento2: #F5A623;
 
     /* ========= TIPOGRAFÍAS ========= */
-
+    --fuente-hero: 'Syne', sans-serif;
     /* Fuente utilizada en títulos y elementos principales */
-    --fuente-titulo: 'Montserrat', sans-serif;
+    --fuente-titulo: 'Newsreader', serif;
 
     /* Fuente utilizada en el cuerpo del texto */
-    --fuente-cuerpo: inherit;
+    --fuente-cuerpo: 'Inter', sans-serif;
 
     /* Fuente utilizada para números, precios y estadísticas */
-    --fuente-descriptiva: 'Inter', sans-serif;
+    --fuente-descriptiva: 'Share Tech Mono', monospace;
 
     /* ========= PESOS DE LA TIPOGRAFIA ========= */
 
@@ -342,7 +342,7 @@ body {
 
     text-align:center;
 
-    font-family:'Cormorant Garamond',serif;
+    font-family: var(--fuente-titulo);
 
     font-size:clamp(3rem,5vw,4.8rem);
 
@@ -356,7 +356,7 @@ body {
 
 .intro-destacado{
 
-    font-family:'Cormorant Garamond',serif;
+    font-family: var(--fuente-titulo);
 
     font-size:2rem;
 
@@ -416,7 +416,7 @@ body {
 
     padding-right:10px;
 
-    font-family:'Cormorant Garamond',serif;
+    font-family: var(--fuente-titulo);
 
     color:#111;
 
@@ -428,7 +428,7 @@ body {
 
     text-align:center;
 
-    font-family:'Cormorant Garamond',serif;
+    font-family: var(--fuente-titulo);
 
     font-size:2.3rem;
 
@@ -503,7 +503,7 @@ background:#111111;
 
 .problema-counter{
 
-    font-family:'Cormorant Garamond',serif;
+    font-family: var(--fuente-titulo);
 
     font-weight:700;
 
@@ -649,7 +649,7 @@ background:#111111;
 
 .problema-contexto p{
 
-    font-family:'Cormorant Garamond', serif;
+    font-family: var(--fuente-titulo);
 
     font-weight:500;
 
@@ -739,7 +739,7 @@ background:#111111;
 
 .mapa-titulo{
 
-    font-family:'Cormorant Garamond',serif;
+    font-family:var(--fuente-titulo);
 
     font-size:clamp(2.8rem,5vw,4.8rem);
 
@@ -846,7 +846,7 @@ background:#111111;
 }
 
 .entorno-titulo {
-    font-family: 'Cormorant Garamond',serif;
+    font-family: var(--fuente-titulo);
     font-weight: 500;
     font-size:clamp(3rem,5vw,4.8rem);
     line-height: 1.1;
@@ -1223,7 +1223,7 @@ background:#111111;
 
 #decisionTitulo{
 
-    font-family:"Cormorant Garamond",serif;
+    font-family:var(--fuente-titulo);
 
     font-size:clamp(3rem,6vw,5rem);
 
