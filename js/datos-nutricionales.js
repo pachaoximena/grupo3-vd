@@ -73,6 +73,7 @@
       actualizarTransicionUnificado() — acá solo se cubren los demás casos. */
   function actualizarVisual(numEscena) {
     // resetear clases de estado en las 3 imágenes sueltas
+    imgComboUnificado.classList.remove('combo-mover-izquierda');
     [imgHamburguesa, imgPapas, imgBebida].forEach(img => {
       img.classList.remove('combo-visible', 'combo-destacado', 'combo-atenuado', 'combo-juntandose', 'combo-oculta');
     });
@@ -108,7 +109,8 @@
         imgComboUnificado.classList.remove('combo-unificado-visible');
         break;
       case 5:
-        comboVisual.classList.add("combo-total-activo");
+        imgComboUnificado.classList.add('combo-unificado-visible');
+        imgComboUnificado.classList.add('combo-mover-izquierda');
         break;
       case 6: // contexto: se mantiene la foto unificada de fondo
       case 7: // equivalencia: idem
