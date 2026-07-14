@@ -1379,7 +1379,7 @@ background:var(--negro-suave);
 
 .combo-texto-capa {
     position: absolute;
-    bottom: 15%;
+    bottom: 18%;
     left: 0;
     width: 100%;
     height: 30%;
@@ -1428,15 +1428,15 @@ background:var(--negro-suave);
     font-family: var(--fuente-cuerpo);
     font-size: clamp(2.5rem, 6vw, 3.8rem);
     font-weight: 600;
-    color: var(--blanco);
+    color: #e63946;
     line-height: 1;
 }
 .combo-escena-cifra span {
     font-family: var(--fuente-cuerpo);
-    font-size: clamp(0.85rem, 1.6vw, 1rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     font-weight: 400;
     letter-spacing: .03em;
-    color: var(--gris);
+    color: var(--blanco);
     margin-left: 0.4rem;
 }
 
