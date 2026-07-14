@@ -949,7 +949,7 @@ background:var(--negro-suave);
 .exposicion-titulo {
     font-family: var(--fuente-titulo);
     font-size: var(--tam-h1);
-    color: var(--blanco-puro);
+    color: var(--negro-suave);
     line-height: 1.1;
     margin-bottom: 25px;
 }
