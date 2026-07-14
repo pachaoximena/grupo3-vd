@@ -1513,7 +1513,3 @@ background:var(--negro-suave);
     opacity: 0;
     transform: translateY(16px);
 }
-
-body {
-    background: red !important;
-}
