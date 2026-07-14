@@ -1287,7 +1287,7 @@ background:var(--negro-suave);
 }
 .combo-img-papas {
     left: 28%;
-    top: 60%;
+    top: 57%;
     max-height: 60%;
     transform: translate(-50%, -50%) scale(1.15);
     z-index: 10;
