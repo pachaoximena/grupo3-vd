@@ -1151,8 +1151,11 @@ background:var(--negro-suave);
 }
 
 #p-expansion-cierre {
-    background: var(--negro-suave);
-    min-height: 80vh;
+     background: var(--negro-suave);
+     min-height: 100vh;
+     display:flex;
+     justify-content:center;
+     align-items:center;
 }
 
 .expansion-cierre-texto {
