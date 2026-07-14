@@ -142,7 +142,7 @@
     const vb = svg.node().viewBox.baseVal;
     const width = vb.width || 640;
     const height = vb.height || 480;
-    const margin = { top: 30, right: 30, bottom: 40, left: 46 };
+    const margin = { top: 70, right: 30, bottom: 40, left: 46 };
     const innerW = width - margin.left - margin.right;
     const innerH = height - margin.top - margin.bottom;
 
