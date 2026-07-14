@@ -187,13 +187,7 @@
       // la ruta de km avanza en vivo mientras se recorre la escena 7
       if (numEscena === 7) {
         actualizarKm(fraccionDentro);
-        document.querySelector('.combo-visual')
-        .classList.add('combo-total-activo');
-      } else {
-            document.querySelector('.combo-visual')
-            .classList.remove('combo-total-activo');
-            }
-
+      }
       // escena 5: las fotos sueltas se acercan y dan paso a la foto unificada
       if (numEscena === 5) {
         actualizarTransicionUnificado(fraccionDentro);
