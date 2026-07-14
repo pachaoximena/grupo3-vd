@@ -279,21 +279,21 @@
       .style("opacity", 1);
 
     // nota comparativa sutil
-    svg.append("text")
-      .attr("x", width / 2)
-      .attr("y", height - 10)
-      .attr("text-anchor", "middle")
-      .attr("class", "pie-label")
-      .style("opacity", 0)
-      .style("font-size", "11.5px")
-      .style("font-family", "Inter, sans-serif")
-      .style("font-weight", "600")
-      .style("fill", "#000000")
-      .text("El tamaño representa el precio relativo de cada opción")
-      .transition()
-      .delay(650)
-      .duration(500)
-      .style("opacity", 1);
+   svg.append("text")
+     .attr("x", width / 2)
+     .attr("y", height - 35)
+     .attr("text-anchor", "middle")
+     .attr("class", "pie-label")
+     .style("opacity", 0)
+     .style("font-size", "14px")
+     .style("font-family", "Inter, sans-serif")
+     .style("font-weight", "600")
+     .style("fill", "#000000")
+     .text("El tamaño representa el precio relativo de cada opción")
+     .transition()
+     .delay(650)
+     .duration(500)
+     .style("opacity", 1);
   }
 
   /* ----------------------------------------------------------
