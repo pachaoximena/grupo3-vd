@@ -128,27 +128,12 @@
   const UMBRAL_UNION = 0.5; // a partir de qué % de la escena 5 ya se ve la foto unificada
 
   function actualizarTransicionUnificado(fraccion) {
-    [imgHamburguesa, imgPapas, imgBebida].forEach(img => {
-      img.classList.remove('combo-visible', 'combo-destacado', 'combo-atenuado');
-    });
-    [flechaHamburguesa, flechaPapas, flechaBebida].forEach(f => f.classList.remove('visible'));
+    imgHamburguesa.classList.add('combo-oculta');
+    imgPapas.classList.add('combo-oculta');
+    imgBebida.classList.add('combo-oculta');
 
-    if (fraccion < UMBRAL_UNION) {
-      // primera mitad: las 3 fotos sueltas se van acercando entre sí
-      imgHamburguesa.classList.add('combo-juntandose');
-      imgPapas.classList.add('combo-juntandose');
-      imgBebida.classList.add('combo-juntandose');
-      imgHamburguesa.classList.remove('combo-oculta');
-      imgPapas.classList.remove('combo-oculta');
-      imgBebida.classList.remove('combo-oculta');
-      imgComboUnificado.classList.remove('combo-unificado-visible');
-    } else {
-      // segunda mitad: las sueltas se esconden, aparece la foto unificada
-      imgHamburguesa.classList.add('combo-oculta');
-      imgPapas.classList.add('combo-oculta');
-      imgBebida.classList.add('combo-oculta');
-      imgComboUnificado.classList.add('combo-unificado-visible');
-    }
+    imgComboUnificado.classList.add('combo-unificado-visible');
+
   }
 
 
