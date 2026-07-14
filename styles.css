@@ -1379,7 +1379,7 @@ background:var(--negro-suave);
 
 .combo-texto-capa {
     position: absolute;
-    bottom: 0;
+    bottom: 12%;
     left: 0;
     width: 100%;
     height: 30%;
