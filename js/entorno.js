@@ -255,16 +255,6 @@
       .duration(500)
       .style("opacity", 1);
 
-    groups.append("text")
-      .attr("class", "bubble-price")
-      .attr("y", 26)
-      .style("opacity", 0)
-      .text((d) => "$" + d.precio.toFixed(2))
-      .transition()
-      .delay(450)
-      .duration(500)
-      .style("opacity", 1);
-
     g.selectAll(".bubble-label")
       .data(DATA.precio)
       .join("text")
