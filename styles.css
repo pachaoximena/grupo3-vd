@@ -686,7 +686,7 @@ background:var(--negro-suave);
 
 .chart-label {
     font-family: var(--entorno-cuerpo);
-    font-size: .72rem;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: .04em;
     color: var(--negro-suave);
