@@ -1027,9 +1027,10 @@ background:var(--negro-suave);
 .expansion-contador {
     position: absolute;
     top: 0.5rem;
-    right: 0.5rem;
-    font-family: var(--fuente-descriptiva);
-    font-size: clamp(0.8rem, 1.6vw, 1rem);
+    right: 5rem;
+    font-family: var(--fuente-hero);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 700
     color: var(--acento2);
     letter-spacing: 0.05em;
     background: rgba(0,0,0,0.55);
