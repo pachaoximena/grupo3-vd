@@ -1286,14 +1286,14 @@ background:var(--negro-suave);
     z-index: 3;
 }
 .combo-img-papas {
-    left: 22%;
-    top: 62%;
+    left: 35%;
+    top: 52%;
     transform: translate(-50%, -50%) scale(1);
     z-index: 2;
 }
 .combo-img-bebida {
-    left: 80%;
-    top: 62%;
+    left: 65%;
+    top: 52%;
     transform: translate(-50%, -50%) scale(1);
     z-index: 2;
 }
