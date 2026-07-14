@@ -743,7 +743,7 @@ background:var(--negro-suave);
 }
 
 .entorno-section .grid line {
-    stroke: rgba(0,0,0,.08)
+    stroke: #bcbcbc
 }
 
 .entorno-section .line-path {
