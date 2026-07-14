@@ -326,31 +326,24 @@
       .duration(900)
       .ease(d3.easeCubicOut)
       .attrTween("d", arcTween);
-
-    // valor central destacado (segmento de alta disponibilidad)
-    const main = DATA.proximidad.find((d) => d.id === "alta");
-    g.append("text")
-      .attr("class", "pie-value")
-      .attr("text-anchor", "middle")
-      .attr("y", -4)
-      .style("opacity", 0)
-      .text(main.valor + "%")
-      .transition()
-      .delay(500)
-      .duration(500)
-      .style("opacity", 1);
-
-    g.append("text")
-      .attr("class", "pie-label")
-      .attr("text-anchor", "middle")
-      .attr("y", 18)
-      .style("opacity", 0)
-      .text("alta disponibilidad")
-      .transition()
-      .delay(600)
-      .duration(500)
-      .style("opacity", 1);
-
+    // porcentajes dentro de cada segmento
+     const labelArc = d3.arc()
+        .innerRadius(radius * 0.78)
+        .outerRadius(radius * 0.78);
+      
+     g.selectAll(".pie-percentage")
+        .data(arcs)
+        .join("text")
+        .attr("class", "pie-value")
+        .attr("transform", d => `translate(${labelArc.centroid(d)})`)
+        .attr("text-anchor", "middle")
+        .style("opacity", 0)
+        .text(d => `${d.data.valor}%`)
+        .transition()
+        .delay(600)
+        .duration(500)
+        .style("opacity", 1);
+     
     // leyenda simple debajo
     const legend = svg.append("g")
       .attr("transform", `translate(${width / 2 - 180},${height - 40})`);
@@ -375,7 +368,7 @@
       .style("font-size", "16px")
       .style("font-weight", "600")
       .style("fill", "#000")
-      .text((d) => `${d.label} — ${d.valor}%`);
+      .text((d) => d.label);
 
     legendItems.transition().delay(700).duration(500).style("opacity", 1);
   }
