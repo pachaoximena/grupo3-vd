@@ -1251,7 +1251,7 @@ background:var(--negro-suave);
 
 .combo-visual {
     position: absolute;
-    top: 4%;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: min(92vw, 560px);
