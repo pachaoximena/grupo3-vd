@@ -1032,8 +1032,6 @@ background:var(--negro-suave);
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     font-weight: 700
     color: var(--acento2);
-    letter-spacing: 0.05em;
-    background: rgba(0,0,0,0.55);
     padding: 0.3rem 0.7rem;
     border-radius: 3px;
 }
