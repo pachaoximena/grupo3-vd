@@ -701,6 +701,7 @@ background:var(--negro-suave);
     width: 100%;
     max-width: 520px;
     aspect-ratio: 4 / 3;
+    margin-top: 35px;
 }
 
 .entorno-chart-svg {
