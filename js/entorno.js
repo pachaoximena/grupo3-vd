@@ -353,13 +353,13 @@
 
     // leyenda simple debajo
     const legend = svg.append("g")
-      .attr("transform", `translate(${width / 2 - 150},${height - 25})`);
+      .attr("transform", `translate(${width / 2 - 150},${height - 75})`);
 
     const legendItems = legend.selectAll(".legend-item")
       .data(DATA.proximidad)
       .join("g")
       .attr("class", "legend-item")
-      .attr("transform", (d, i) => `translate(0,${i * 22})`)
+      .attr("transform", (d, i) => `translate(0,${i * 26})`)
       .style("opacity", 0);
 
     legendItems.append("rect")
@@ -372,7 +372,7 @@
       .attr("x", 18)
       .attr("y", 9)
       .attr("class", "pie-label")
-      .style("font-size", "16px")
+      .style("font-size", "14px")
       .style("font-weight", "600")
       .style("fill", "#000")
       .text((d) => `${d.label} — ${d.valor}%`);
