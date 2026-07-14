@@ -1281,20 +1281,20 @@ background:var(--negro-suave);
     max-height: 48%;
     max-width: 56%;
     left: 50%;
-    top: 60%;
+    top: 70%;
     transform: translate(-50%, -50%) scale(1);
     z-index: 2;
 }
 .combo-img-papas {
     left: 28%;
-    top: 63%;
+    top: 73%;
     max-height: 60%;
     transform: translate(-50%, -50%) scale(1.15);
     z-index: 10;
 }
 .combo-img-bebida {
     left: 68%;
-    top: 60%;
+    top: 70%;
     transform: translate(-50%, -50%) scale(1);
     z-index: 1;
 }
