@@ -1161,9 +1161,9 @@ background:var(--negro-suave);
 
 .expansion-cierre-texto {
     font-family: var(--fuente-titulo);
-    font-size: var(--tam-h1);
+    font-size: var(--tam-h2);
     text-align: center;
-    max-width: 720px;
+    max-width: 1000px;
     opacity: 0;
     transform: translateY(16px);
 }
