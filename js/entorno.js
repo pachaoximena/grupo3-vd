@@ -285,7 +285,7 @@
      .attr("text-anchor", "middle")
      .attr("class", "pie-label")
      .style("opacity", 0)
-     .style("font-size", "14px")
+     .style("font-size", "18px")
      .style("font-family", "Inter, sans-serif")
      .style("font-weight", "600")
      .style("fill", "#000000")
