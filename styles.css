@@ -796,6 +796,8 @@ background:var(--negro-suave);
     font-size: 22px;
     font-weight: 500;
     fill: var(--entorno-ink);
+    text-anchor: middle; 
+    pointer-events:none;
 }
 
 @media (max-width: 900px) {
