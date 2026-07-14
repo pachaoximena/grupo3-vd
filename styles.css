@@ -1434,6 +1434,7 @@ background:var(--negro-suave);
 .combo-escena-cifra span {
     font-family: var(--fuente-cuerpo);
     font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    vertical-align: 0.15em;
     font-weight: 400;
     letter-spacing: .03em;
     color: var(--blanco);
