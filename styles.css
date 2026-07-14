@@ -1080,7 +1080,7 @@ background:var(--negro-suave);
 }
 
 .expansion-tarjeta.activa {
-    top: 50%;
+    top: 70%;
     opacity: 1;
     pointer-events: auto;
     transform: translateY(-50%);
@@ -1098,8 +1098,7 @@ background:var(--negro-suave);
 
 .expansion-tarjeta.lado-derecha,
 .expansion-tarjeta.lado-izquierda {
-    left: calc(50% + 120px);
-    right: auto;
+    left: calc(50% + 180px);
 }
 
 .expansion-tarjeta-decada {
