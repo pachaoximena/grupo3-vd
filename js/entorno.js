@@ -296,10 +296,10 @@
     const vb = svg.node().viewBox.baseVal;
     const width = vb.width || 640;
     const height = vb.height || 480;
-    const radius = Math.min(width, height) / 2 - 40;
+    const radius = Math.min(width, height) / 2 - 75;
 
     const g = svg.append("g")
-      .attr("transform", `translate(${width / 2},${height / 2 - 10})`);
+      .attr("transform", `translate(${width / 2},${height / 2 - 30})`);
 
     const color = d3.scaleOrdinal()
       .domain(DATA.proximidad.map((d) => d.id))
@@ -353,7 +353,7 @@
 
     // leyenda simple debajo
     const legend = svg.append("g")
-      .attr("transform", `translate(${width / 2 - 150},${height - 30})`);
+      .attr("transform", `translate(${width / 2 - 180},${height - 30})`);
 
     const legendItems = legend.selectAll(".legend-item")
       .data(DATA.proximidad)
