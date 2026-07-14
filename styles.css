@@ -1339,8 +1339,8 @@ background:var(--negro-suave);
 
 .combo-img-unificado {
     position: absolute;
-    left: 50%;
-    top: 76%;
+    left: 47%;
+    top: 75%;
     max-height: 60%;
     max-width: 80%;
     transform: translate(-50%, -50%);
