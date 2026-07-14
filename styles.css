@@ -1347,6 +1347,10 @@ background:var(--negro-suave);
     opacity: 0;
 }
 
+.combo-img-unificado.combo-mover-izquierda {
+    left: 25%;
+}
+
 .combo-img-unificado.combo-unificado-visible {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
