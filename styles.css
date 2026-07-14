@@ -1287,7 +1287,7 @@ background:var(--negro-suave);
 }
 .combo-img-papas {
     left: 28%;
-    top: 45%;
+    top: 60%;
     max-height: 60%;
     transform: translate(-50%, -50%) scale(1.15);
     z-index: 10;
@@ -1372,6 +1372,10 @@ background:var(--negro-suave);
 #flechaHamburguesa { left: 50%; top: 84%;  transform: translateX(-50%) rotate(180deg); }
 #flechaPapas        { left: 22%; top: 90%; transform: translateX(-50%) rotate(180deg); }
 #flechaBebida        { left: 80%; top: 90%; transform: translateX(-50%) rotate(180deg); }
+
+.combo-flecha {
+    display: none;
+}
 
 .combo-texto-capa {
     position: absolute;
