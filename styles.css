@@ -960,7 +960,7 @@ background:var(--negro-suave);
     font-family: var(--fuente-cuerpo);
     font-size: var(--tam-texto);
     line-height: 1.8;
-    color: var(--entorno-ink-soft);
+    color: #666666;
 }
  
 .exposicion-collage {
