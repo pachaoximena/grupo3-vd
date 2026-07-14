@@ -1510,6 +1510,10 @@ background:var(--negro-suave);
     font-family: var(--fuente-hero);
 }
 
+.combo-visual.combo-total-activo {
+    transform: translateX(-25%);
+}
+
 @media (max-width: 640px) {
     .combo-scroll-espaciador { height: 700vh; }
     .combo-visual { height: 62%; top: 3%; }
