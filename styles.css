@@ -1283,16 +1283,16 @@ background:var(--negro-suave);
     left: 50%;
     top: 52%;
     transform: translate(-50%, -50%) scale(1);
-    z-index: 3;
-}
-.combo-img-papas {
-    left: 35%;
-    top: 52%;
-    transform: translate(-50%, -50%) scale(1);
     z-index: 2;
 }
+.combo-img-papas {
+    left: 28%;
+    top: 52%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 4;
+}
 .combo-img-bebida {
-    left: 65%;
+    left: 72%;
     top: 52%;
     transform: translate(-50%, -50%) scale(1);
     z-index: 2;
