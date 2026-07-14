@@ -1063,8 +1063,8 @@ background:var(--negro-suave);
     flex-direction: column;
     gap: 0.7rem;
     padding: padding: 2.3rem;
-    background: rgba(10,10,10,0.88);
-    border: 1px solid #232323;
+    background: white;
+    border: none;
     border-radius: 8px;
     backdrop-filter: blur(6px);
     opacity: 0;
@@ -1114,7 +1114,7 @@ background:var(--negro-suave);
     font-family: var(--fuente-cuerpo);
     font-size: clamp(1rem, 1.8vw, 1.15rem);
     font-weight: 300;
-    color: var(--blanco);
+    color: var(--negro-suave);
     line-height: 1.6;
 }
 
