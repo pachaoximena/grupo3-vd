@@ -129,21 +129,19 @@ ScrollTrigger.create({
 
         let valor=0;
 
-        const numero=document.getElementById("contadorObesidad");
+        const numero=document.getElementById("counter");
 
         const intervalo=setInterval(()=>{
 
-            valor++;
-
-            numero.textContent=valor;
-
-            if(valor>=42){
-
-                clearInterval(intervalo);
-
-            }
-
-        },40);
+              valor++;
+      
+              numero.innerHTML = `${valor}<sup>%</sup>`;
+      
+              if(valor>=42){
+                 clearInterval(intervalo);
+              }
+      
+              },40);
 
     }
 
