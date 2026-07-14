@@ -177,7 +177,7 @@
 ═══════════════════════════════════════════════════════════════*/
   ScrollTrigger.create({
     trigger: '#p-combo',
-    start: 'top top',
+    start: 'top 80%',
     end: 'bottom bottom',
     scrub: true,
     onUpdate: (self) => {
