@@ -113,19 +113,17 @@ body {
     height:100%;
     object-fit:cover;
     transform:translate(-50%,-50%);
-    z-index:0;
+    z-index:-2;
 }
 
 .overlay{
     position:absolute;
     inset:0;
     background:rgba(0,0,0,.45);
-    z-index:1;
+    z-index:-1;
 }
 
 .hero-content{
-    position:relative;
-    z-index:2;
     width:min(900px,90%);
     color: var(--blanco-puro);
 }
@@ -165,7 +163,6 @@ body {
     text-transform:uppercase;
     opacity:.85;
     animation:float 2s ease-in-out infinite;
-    z-index:2;
 }
 
 @keyframes float{
@@ -570,7 +567,7 @@ background:var(--negro-suave);
 }
 
 .entorno-step {
-    height: 90vh;
+    height: 130vh;
     width: 100%;
 }
 
@@ -581,7 +578,7 @@ background:var(--negro-suave);
     width: 100%;
     display: flex;
     align-items: stretch;
-    gap: 4vw;
+    gap: 2vw;
     background: var(--entorno-bg);
     border-top: 1px solid var(--entorno-hairline);
 }
@@ -592,8 +589,7 @@ background:var(--negro-suave);
     display: flex;
     align-items: center;
     position: relative;
-    padding-left: 6vw;
-    padding-right: 4vw;
+    padding-left: 3.5vw;
 }
 
 .entorno-rail {
@@ -653,7 +649,7 @@ background:var(--negro-suave);
 
 .numero {
     display: block;
-    font-family: var(--entorno-cuerpo);
+    font-family: var(--entorno-mono);
     font-size: 2.4rem;
     color: var(--entorno-accent);
     font-weight: 600;
@@ -681,18 +677,16 @@ background:var(--negro-suave);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4vh 2vw;
+    padding: 4vh 3vw 4vh 0.5vw;
 }
 
 .chart-label {
-    font-family: var(--entorno-cuerpo);
-    font-size: ".72rem";
-    font-weight: 600;
+    font-family: var(--entorno-mono);
+    font-size: .72rem;
     letter-spacing: .04em;
-    color: var(--negro-suave);
+    color: var(--entorno-ink-soft);
     text-align: center;
-    margin-top: 18px;
-    margin-bottom: 0px;
+    margin-bottom: 1.25rem;
     min-height: 1.4em;
     transition: opacity .4s ease;
 }
@@ -702,7 +696,6 @@ background:var(--negro-suave);
     width: 100%;
     max-width: 520px;
     aspect-ratio: 4 / 3;
-    margin-top: 35px;
 }
 
 .entorno-chart-svg {
@@ -732,27 +725,23 @@ background:var(--negro-suave);
 
 .entorno-section .axis text {
     font-family: var(--entorno-mono);
-    font-size: 15px;
-    font-weight: 400;
-    fill: var(--negro-suave);
+    font-size: 11px;
+    fill: var(--entorno-ink-soft);
 }
 
 .entorno-section .axis path,
 .entorno-section .axis line {
-    stroke: #888;
-    stroke-width: 1.5px;
+    stroke: var(--entorno-hairline);
 }
 
 .entorno-section .grid line {
-    stroke: #c8c8c8;
-    stroke-width: 1.2px;
-    stroke-dasharray: 4 4;
+    stroke: var(--entorno-hairline);
 }
 
 .entorno-section .line-path {
     fill: none;
     stroke: var(--entorno-accent);
-    stroke-width: 3px;
+    stroke-width: 2.5;
     stroke-linecap: round;
     stroke-linejoin: round;
 }
@@ -760,7 +749,7 @@ background:var(--negro-suave);
 .entorno-section .line-dot {
     fill: var(--entorno-bg);
     stroke: var(--entorno-accent);
-    stroke-width: 2.5px;
+    stroke-width: 2;
 }
 
 .entorno-section .bubble-label {
@@ -911,6 +900,77 @@ background:var(--negro-suave);
 .decision-situacion.completada{
     opacity:.8;
 }
+
+/* ══════════════════════════════════════
+   ACTO V.5 — LA EXPOSICIÓN
+   (fondo negro: escena de impacto visual,
+   tag dorado + título + texto + collage)
+══════════════════════════════════════ */
+
+.exposicion-section {
+    min-height: 100vh;
+    background: var(--negro-suave);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 6vw;
+}
+
+.exposicion-header {
+    max-width: 850px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.exposicion-tag {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--fuente-cuerpo);
+    text-transform: uppercase;
+    letter-spacing: .35em;
+    font-size: .8rem;
+    color: var(--dorado);
+}
+
+.exposicion-titulo {
+    font-family: var(--fuente-titulo);
+    font-size: var(--tam-h1);
+    color: var(--blanco-puro);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.exposicion-subtitulo {
+    max-width: 720px;
+    margin: auto;
+    font-family: var(--fuente-cuerpo);
+    font-size: var(--tam-texto);
+    line-height: 1.8;
+    color: var(--gris-claro);
+}
+
+.exposicion-collage {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.exposicion-collage-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 78vh;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid var(--linea-oscura);
+}
+
+@media (max-width: 640px) {
+    .exposicion-section { padding: 90px 6vw; }
+    .exposicion-collage-img { max-height: 55vh; }
+}
+
 /* ══════════════════════════════════════
    ACTO VI — EXPANSIÓN (sticky scrollytelling)
 ══════════════════════════════════════ */
