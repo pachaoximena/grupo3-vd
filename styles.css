@@ -697,7 +697,7 @@ background:var(--negro-suave);
 .chart-stage {
     position: relative;
     width: 100%;
-    max-width: 700px;
+    max-width: 520px;
     aspect-ratio: 4 / 3;
 }
 
@@ -727,26 +727,26 @@ background:var(--negro-suave);
 }
 
 .entorno-section .axis text {
-    font-family: var(--entorno-cuerpo);
-    font-size: 16px;
-    font-weight: 600;
+    font-family: var(--entorno-mono);
+    font-size: 13px;
+    font-weight: 500;
     fill: var(--negro-suave);
 }
 
 .entorno-section .axis path,
 .entorno-section .axis line {
-    stroke: #777;
+    stroke: #888;
     stroke-width: 1.5px;
 }
 
 .entorno-section .grid line {
-    stroke: rgba(0,0,0,.12)
+    stroke: rgba(0,0,0,.08)
 }
 
 .entorno-section .line-path {
     fill: none;
     stroke: var(--entorno-accent);
-    stroke-width: 4px;
+    stroke-width: 3px;
     stroke-linecap: round;
     stroke-linejoin: round;
 }
@@ -754,7 +754,7 @@ background:var(--negro-suave);
 .entorno-section .line-dot {
     fill: var(--entorno-bg);
     stroke: var(--entorno-accent);
-    stroke-width: 3px;
+    stroke-width: 2.5px;
 }
 
 .entorno-section .bubble-label {
