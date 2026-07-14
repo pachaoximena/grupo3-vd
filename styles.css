@@ -1186,72 +1186,6 @@ background:var(--negro-suave);
     .expansion-tarjeta { width: min(320px, 90vw); left: 50%; right: auto; transform: translateX(-50%); }
     .expansion-tarjeta.activa { transform: translateX(-50%) translateY(-50%); }
 }
-/* ══════════════════════════════════════
-    ACTO VII — LAS MARCAS DEL DÍA A DÍA
-══════════════════════════════════════ */
-.franq-intro {
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
-    font-weight: 300;
-    color: var(--gris);
-    text-align: center;
-    max-width: 640px;
-    line-height: 1.75;
-    opacity: 0;
-    transform: translateY(16px);
-}
-.franq-intro span { color: var(--blanco); font-weight: 500; }
-
-.franq-subtitulo {
-    font-size: 0.7rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: #444;
-    opacity: 0;
-}
-
-.franq-tarjetas {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-.franq-card {
-    background: #0a0a0a;
-    border: 1px solid #1e1e1e;
-    border-radius: 6px;
-    padding: 2rem 1.5rem;
-    width: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    transition: border-color 0.25s, transform 0.2s, background 0.25s;
-    font-family: inherit;
-    color: var(--blanco);
-}
-.franq-card-activa {
-    border-color: var(--acento);
-    background: rgba(230,51,41,0.06);
-}
-.franq-card-proximamente {
-    opacity: 0.4;
-}
-.franq-card-proximamente .franq-nombre::after {
-    content: "Próximamente";
-    display: block;
-    font-family: var(--fuente-cuerpo);
-    font-weight: 300;
-    font-size: 0.6rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--gris-medio);
-    margin-top: 0.3rem;
-}
-.franq-emoji  { font-size: 2rem; }
-.franq-nombre { font-family: var(--fuente-hero); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.02em; }
 
 /* ══════════════════════════════════════
    ACTO VI.1 — LOS COMBOS (intro)
@@ -1261,7 +1195,7 @@ background:var(--negro-suave);
 ══════════════════════════════════════ */
  
 .combo-intro-header {
-    max-width: 850px;
+    max-width: 1000px;
     text-align: center;
     margin: auto;
 }
