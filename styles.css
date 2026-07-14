@@ -66,17 +66,21 @@
 
     /* ========= TAMAÑOS ========= */
 
-    /* Título principal del proyecto (solo aparece al inicio) */
-    --tam-titulo: clamp(4rem, 10vw, 8rem);
+    --tam-hero: clamp(4rem, 9vw, 7rem);
 
-    /* Texto que guía la narrativa del scrollytelling */
-    --tam-narrativo: clamp(1.4rem, 3.4vw, 2.4rem);     /* EL QUE ME GUSTA */
+    --tam-h1: clamp(3rem, 5vw, 4.8rem);
 
-    /* Texto descriptivo (explicaciones, ingredientes, etc.) */
-    --tam-texto: 1rem; /* como la descripción del mapa mundial o las opciones */
+    --tam-h2: clamp(2rem, 3.8vw, 2.8rem);
 
-    /* Etiquetas, notas, fuentes y aclaraciones */
-    --tam-etiqueta: 0.8rem; /*Opción A, Opción B, Fuente:, 1955*/
+    --tam-subtitulo: clamp(1.2rem, 2.2vw, 1.5rem);
+
+    --tam-texto: clamp(1rem, 1.4vw, 1.15rem);
+
+    --tam-texto-grande: clamp(1.2rem, 2vw, 1.4rem);
+
+    --tam-numero: clamp(4.5rem, 12vw, 10rem);
+
+    --tam-etiqueta: .8rem;
 
     /* ========= ESPACIO ENTRE UNA LINEA Y LA SIG ========= */
     --linea-titulo: 1;
@@ -221,7 +225,7 @@ body {
 
     font-family:"Syne",sans-serif;
 
-    font-size:clamp(2rem,8vw,6rem);
+    font-size: var(--tam-hero);
 
     text-transform:uppercase;
 
@@ -249,7 +253,7 @@ body {
 
     margin:auto;
 
-    font-family:"Inter",sans-serif;
+    font-family: var(--fuente-cuerpo);
 
     color:#f5f5f5;
 }
@@ -268,7 +272,7 @@ body {
 
     color:white;
 
-    font-family:"Inter",sans-serif;
+    font-family:var(--fuente-cuerpo);
 
     letter-spacing:3px;
 
@@ -324,7 +328,7 @@ body {
 
     text-align:center;
 
-    font-family:'Inter',sans-serif;
+    font-family:var(--fuente-cuerpo);
 
     letter-spacing:.35em;
 
@@ -344,7 +348,7 @@ body {
 
     font-family: var(--fuente-titulo);
 
-    font-size:clamp(3rem,5vw,4.8rem);
+    font-size:var(--tam-h1);
 
     line-height:1.1;
 
@@ -358,9 +362,9 @@ body {
 
     font-family: var(--fuente-titulo);
 
-    font-size:2rem;
-
-    line-height:1.7;
+    font-size: var(--tam-h2);
+    
+    line-height: 1.3;
 
     color:#222;
 
@@ -394,11 +398,10 @@ body {
 
 .intro-texto p{
 
-    font-family:'Inter',sans-serif;
+    font-family:var(--fuente-cuerpo);
 
-    font-size:1.15rem;
-
-    line-height:2;
+    font-size: var(--tam-texto);
+    line-height: 1.8;
 
     color:#555;
 
@@ -430,7 +433,9 @@ body {
 
     font-family: var(--fuente-titulo);
 
-    font-size:2.3rem;
+    font-size: var(--tam-h2);
+    
+    line-height: 1.3;
 
     color: rgb(0, 0, 0);
 
@@ -468,7 +473,7 @@ background:#111111;
 .problema-eyebrow{
     display:block;
     margin-bottom:18px;
-    font-family:'Inter',sans-serif;
+    font-family:var(--fuente-cuerpo);
     text-transform:uppercase;
     letter-spacing:.35em;
     font-size:.8rem;
@@ -528,7 +533,7 @@ background:#111111;
 
 .problema-caption-line{
 
-    font-family:'Inter',sans-serif;
+    font-family:var(--fuente-cuerpo);
 
     font-size:clamp(18px,2.4vw,24px);
     font-weight:400;
@@ -551,7 +556,7 @@ background:#111111;
 
 
 .problema-caption-legend{
-    font-family:'Inter',sans-serif;
+    font-family:var(--fuente-cuerpo);
 
     font-size:.85rem;
 
@@ -576,7 +581,7 @@ background:#111111;
     top:0;
     left:0;
     right:0;
-    font-family:'Inter',sans-serif;
+    font-family:var(--fuente-cuerpo);
     font-weight:400;
     font-size:clamp(18px,2.4vw,24px);
     opacity:0;
@@ -653,9 +658,9 @@ background:#111111;
 
     font-weight:500;
 
-    font-size:clamp(2rem,3.5vw,2.8rem);
-
-    line-height:1.2;
+    font-size: var(--tam-h2);
+    
+    line-height: 1.3;
 
     color:var(--blanco);
 
@@ -725,7 +730,7 @@ background:#111111;
 
     margin-bottom:18px;
 
-    font-family:'Inter',sans-serif;
+    font-family:var(--fuente-cuerpo);
 
     text-transform:uppercase;
 
@@ -741,7 +746,7 @@ background:#111111;
 
     font-family:var(--fuente-titulo);
 
-    font-size:clamp(2.8rem,5vw,4.8rem);
+    font-size:var(--tam-h1);
 
     color:white;
 
@@ -757,11 +762,11 @@ background:#111111;
 
     margin:auto;
 
-    font-family:'Inter',sans-serif;
+    font-family:var(--fuente-cuerpo);
 
-    font-size:1.15rem;
-
-    line-height:1.9;
+    font-size: var(--tam-texto);
+    
+    line-height: 1.8;
 
     color:#BDBDBD;
 
@@ -792,7 +797,7 @@ background:#111111;
 .mapa-leyenda{
 
     margin-top:45px;
-    font-family:'Inter',sans-serif;
+    font-family:var(--fuente-cuerpo);
     font-size:.95rem;
     color:#8A8A8A;
     letter-spacing:.04em;
@@ -848,7 +853,7 @@ background:#111111;
 .entorno-titulo {
     font-family: var(--fuente-titulo);
     font-weight: 500;
-    font-size:clamp(3rem,5vw,4.8rem);
+    font-size:var(--tam-h1);
     line-height: 1.1;
     letter-spacing: -0.01em;
     margin: 25px 0;
@@ -875,7 +880,7 @@ background:#111111;
 } */
 
 .entorno-subtitulo {
-    font-size: 1.2rem;
+    font-size: var(--tam-texto);
     line-height: 1.8;
     color: var(--entorno-ink-soft);
     max-width: 62ch;
@@ -1207,7 +1212,7 @@ background:#111111;
 
     font-size:.8rem;
 
-    font-family:Inter,sans-serif;
+    font-family:var(--fuente-cuerpo);
 
 }
 
@@ -1225,7 +1230,7 @@ background:#111111;
 
     font-family:var(--fuente-titulo);
 
-    font-size:clamp(3rem,6vw,5rem);
+    font-size: var(--tam-h1);
 
     color:white;
 
@@ -1237,9 +1242,9 @@ background:#111111;
 
     color:#d7d7d7;
 
-    font-size:1.2rem;
-
-    line-height:1.8;
+    font-size: var(--tam-texto);
+    
+    line-height: 1.8;
 
     max-width:560px;
 
@@ -1390,7 +1395,7 @@ background:#111111;
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: var(--fuente-descriptiva);
     font-size: clamp(0.8rem, 1.6vw, 1rem);
     color: var(--acento2);
     letter-spacing: 0.05em;
@@ -1471,7 +1476,7 @@ background:#111111;
  
 /* ── Contenido de las tarjetas ── */
 .expansion-tarjeta-decada {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fuente-cuerpo);
     font-weight: 800;
     font-size: 1rem;
     letter-spacing: 0.28em;
@@ -1628,7 +1633,7 @@ background:#111111;
 .franq-card-proximamente .franq-nombre::after {
     content: "Próximamente";
     display: block;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fuente-cuerpo);
     font-weight: 300;
     font-size: 0.6rem;
     letter-spacing: 0.1em;
@@ -1837,8 +1842,9 @@ background:#111111;
 }
 
 .combo-escena-texto {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(1.3rem, 3.2vw, 2rem);
+    font-family: var(--fuente-hero);
+    font-size: var(--tam-h2);
+    line-height: 1.3;
     font-weight: 700;
     color: var(--blanco);
 }
@@ -1852,14 +1858,14 @@ background:#111111;
 }
 
 .combo-escena-cifra {
-    font-family: 'Syne', sans-serif;
+    font-family: var(--fuente-hero);
     font-size: clamp(2.2rem, 6vw, 3.4rem);
     font-weight: 800;
     color: var(--blanco);
     line-height: 1;
 }
 .combo-escena-cifra span {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fuente-cuerpo);
     font-size: clamp(0.85rem, 1.6vw, 1rem);
     font-weight: 300;
     color: var(--gris);
@@ -1880,7 +1886,7 @@ background:#111111;
     line-height: 1.7;
 }
 .combo-escena-contexto span {
-    font-family: 'Syne', sans-serif;
+    font-family: var(--fuente-hero);
     font-weight: 800;
     color: var(--acento2);
     font-size: 1.3em;
@@ -1898,7 +1904,7 @@ background:#111111;
 }
 
 .km-cifra-grande {
-    font-family: 'Syne', sans-serif;
+    font-family: var(--fuente-hero);
     font-weight: 800;
     font-size: clamp(2.6rem, 7vw, 4.2rem);
     color: var(--acento2);
