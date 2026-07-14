@@ -727,7 +727,7 @@ background:var(--negro-suave);
 }
 
 .entorno-section .axis text {
-    font-family: var(--entorno-mono);
+    font-family: var(--entorno-cuerpo);
     font-size: 13px;
     font-weight: 500;
     fill: var(--negro-suave);
