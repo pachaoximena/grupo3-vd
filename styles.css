@@ -592,8 +592,8 @@ background:var(--negro-suave);
     display: flex;
     align-items: center;
     position: relative;
-    padding-left: 3.5vw;
-    padding-right: 5vw;
+    padding-left: 6vw;
+    padding-right: 4vw;
 }
 
 .entorno-rail {
