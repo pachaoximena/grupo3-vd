@@ -1007,7 +1007,7 @@ background:var(--negro-suave);
 }
 
 .expansion-scroll-espaciador {
-    height: 400vh;
+    height: 280vh;
     width: 100%;
 }
 
@@ -1180,7 +1180,7 @@ background:var(--negro-suave);
 }
 
 @media (max-width: 640px) {
-    .expansion-scroll-espaciador { height: 280vh; }
+    .expansion-scroll-espaciador { height: 500vh; }
     .expansion-sticky-wrap { gap: 1rem; padding: 1.2rem 0.8rem; }
     .expansion-mapa-contenedor { max-width: 90vw; }
     .expansion-tarjeta { width: min(320px, 90vw); left: 50%; right: auto; transform: translateX(-50%); }
