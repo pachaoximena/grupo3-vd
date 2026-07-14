@@ -975,10 +975,7 @@ background:var(--negro-suave);
     display: block;
     width: 100%;
     height: auto;
-    max-height: 78vh;
     object-fit: cover;
-    border-radius: 6px;
-    border: 1px solid var(--linea-oscura);
 }
  
 @media (max-width: 640px) {
