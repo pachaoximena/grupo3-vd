@@ -1281,20 +1281,20 @@ background:var(--negro-suave);
     max-height: 48%;
     max-width: 56%;
     left: 50%;
-    top: 70%;
+    top: 75%;
     transform: translate(-50%, -50%) scale(1);
     z-index: 2;
 }
 .combo-img-papas {
     left: 28%;
-    top: 73%;
+    top: 78%;
     max-height: 60%;
     transform: translate(-50%, -50%) scale(1.15);
     z-index: 10;
 }
 .combo-img-bebida {
     left: 68%;
-    top: 70%;
+    top: 75%;
     transform: translate(-50%, -50%) scale(1);
     z-index: 1;
 }
@@ -1379,7 +1379,7 @@ background:var(--negro-suave);
 
 .combo-texto-capa {
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     left: 0;
     width: 100%;
     height: 30%;
