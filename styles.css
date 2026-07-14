@@ -1254,6 +1254,46 @@ background:var(--negro-suave);
 .franq-nombre { font-family: var(--fuente-hero); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.02em; }
 
 /* ══════════════════════════════════════
+   ACTO VI.1 — LOS COMBOS (intro)
+   (fondo negro: mantiene la continuidad con
+   Franquicias y con el scrollytelling del combo,
+   que también son fondo negro)
+══════════════════════════════════════ */
+ 
+.combo-intro-header {
+    max-width: 850px;
+    text-align: center;
+    margin: auto;
+}
+ 
+.combo-intro-tag {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--fuente-cuerpo);
+    text-transform: uppercase;
+    letter-spacing: .35em;
+    font-size: .8rem;
+    color: var(--dorado);
+}
+ 
+.combo-intro-titulo {
+    font-family: var(--fuente-titulo);
+    font-size: var(--tam-h1);
+    color: var(--blanco-puro);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+ 
+.combo-intro-subtitulo {
+    max-width: 720px;
+    margin: auto;
+    font-family: var(--fuente-cuerpo);
+    font-size: var(--tam-texto);
+    line-height: 1.8;
+    color: var(--gris-claro);
+}
+
+/* ══════════════════════════════════════
     ACTO VI — UN COMBO, POR DENTRO (sticky scrollytelling)
 ══════════════════════════════════════ */
 
