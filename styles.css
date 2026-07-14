@@ -1098,7 +1098,7 @@ background:var(--negro-suave);
 
 .expansion-tarjeta.lado-derecha,
 .expansion-tarjeta.lado-izquierda {
-    left: calc(50% + 180px);
+    left: calc(50% + 220px);
 }
 
 .expansion-tarjeta-decada {
