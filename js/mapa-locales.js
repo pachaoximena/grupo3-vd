@@ -309,11 +309,11 @@
   gsap.to("#expansionCierreTexto", {
     opacity: 1,
     y: 0,
-    duration: 1.1,
+    duration: 1.8,
     ease: "power2.out",
     scrollTrigger: {
       trigger: "#p-expansion-cierre",
-      start: "top 65%",
+      start: "top 80%",
       toggleActions: "play none none reverse",
     }
   });
