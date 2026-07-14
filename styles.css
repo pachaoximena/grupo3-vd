@@ -1151,6 +1151,7 @@ background:var(--negro-suave);
 }
 
 #p-expansion-cierre {
+     font-family: var(--fuente-titulo);
      background: var(--negro-suave);
      min-height: 100vh;
      display:flex;
