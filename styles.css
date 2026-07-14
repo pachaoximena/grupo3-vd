@@ -922,7 +922,7 @@ background:var(--negro-suave);
  
 .exposicion-section {
     min-height: 100vh;
-    background: var(--negro-suave);
+    background: var(--blanco-puro);
     display: flex;
     flex-direction: column;
     justify-content: center;
