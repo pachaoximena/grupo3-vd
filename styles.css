@@ -1404,7 +1404,7 @@ background:var(--negro-suave);
 }
 
 .combo-escena-texto {
-    font-family: var(--fuente-titulo);
+    font-family: var(--fuente-cuerpo);
     font-size: var(--tam-h2);
     line-height: 1.3;
     font-weight: 500;
