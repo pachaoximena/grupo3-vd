@@ -1342,17 +1342,9 @@ background:var(--negro-suave);
     left: 50%;
     top: 76%;
     max-height: 60%;
-    max-width: 85%;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    transform: translate(-50%, -50%) scale(1);
+    max-width: 80%;
+    transform: translate(-50%, -50%);
     opacity: 0;
-    filter: brightness(0.85) saturate(0.95);
-    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    pointer-events: none;
-    z-index: 4;
-    opacity: 0.5;
 }
 
 .combo-img-unificado.combo-unificado-visible {
