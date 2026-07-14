@@ -1227,6 +1227,13 @@ background:var(--negro-suave);
     color: var(--gris-claro);
 }
 
+#p-combo-intro{
+    min-height: 60vh;
+    justify-content: flex-end;
+    padding: 5rem 2rem 2rem;
+    background: var(--negro-suave);
+}
+
 /* ══════════════════════════════════════
     ACTO VI — UN COMBO, POR DENTRO (sticky scrollytelling)
 ══════════════════════════════════════ */
@@ -1251,7 +1258,7 @@ background:var(--negro-suave);
 
 .combo-visual {
     position: absolute;
-    top: 0;
+    top: -10%;
     left: 50%;
     transform: translateX(-50%);
     width: min(92vw, 560px);
