@@ -1062,7 +1062,7 @@ background:var(--negro-suave);
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
-    padding: 2.3rem;
+    padding: 2rem 2.8rem;;
     background: #f8f4ec;
     border: 2px solid #111;
     box-shadow: 6px 6px 0 rgba(0,0,0,.15);
