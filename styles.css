@@ -1233,7 +1233,7 @@ background:var(--negro-suave);
 
 .combo-section {
     position: relative;
-    background: var(--negro);
+    background: var(--negro-suave);
 }
 
 .combo-sticky-wrap {
