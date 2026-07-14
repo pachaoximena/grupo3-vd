@@ -77,7 +77,8 @@
       img.classList.remove('combo-visible', 'combo-destacado', 'combo-atenuado', 'combo-juntandose', 'combo-oculta');
     });
     [flechaHamburguesa, flechaPapas, flechaBebida].forEach(f => f.classList.remove('visible'));
-
+    const comboVisual = document.getElementById("comboVisual");
+    comboVisual.classList.remove("combo-total-activo");
     switch (numEscena) {
       case 1: // intro: las 3 visibles, nada destacado
         imgHamburguesa.classList.add('combo-visible');
@@ -106,8 +107,9 @@
         flechaBebida.classList.add('visible');
         imgComboUnificado.classList.remove('combo-unificado-visible');
         break;
-      // case 5 (total) ya no se inicializa acá: lo maneja
-      // actualizarTransicionUnificado() en cada frame de scroll
+      case 5:
+        comboVisual.classList.add("combo-total-activo");
+        break;
       case 6: // contexto: se mantiene la foto unificada de fondo
       case 7: // equivalencia: idem
         imgHamburguesa.classList.add('combo-oculta');
