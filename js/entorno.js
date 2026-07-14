@@ -218,8 +218,8 @@
     const width = vb.width || 640;
     const height = vb.height || 480;
 
-    const maxR = 118;
-    const minR = 78;
+    const maxR = 140;
+    const minR = 90;
     const radius = d3.scaleSqrt()
       .domain([0, d3.max(DATA.precio, (d) => d.precio)])
       .range([minR * 0.6, maxR]);
