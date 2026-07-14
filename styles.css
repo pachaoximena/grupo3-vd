@@ -1027,7 +1027,7 @@ background:var(--negro-suave);
 .expansion-contador {
     position: absolute;
     top: 0.5rem;
-    right: 5rem;
+    right: 7rem;
     font-family: var(--fuente-hero);
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     font-weight: 700
@@ -1151,7 +1151,7 @@ background:var(--negro-suave);
 }
 
 #p-expansion-cierre {
-    background: var(--negro);
+    background: var(--negro-suave);
     min-height: 80vh;
 }
 
