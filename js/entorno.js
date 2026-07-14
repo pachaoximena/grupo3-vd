@@ -353,7 +353,7 @@
 
     // leyenda simple debajo
     const legend = svg.append("g")
-      .attr("transform", `translate(${width / 2 - 150},${height - 45})`);
+      .attr("transform", `translate(${width / 2 - 150},${height - 30})`);
 
     const legendItems = legend.selectAll(".legend-item")
       .data(DATA.proximidad)
