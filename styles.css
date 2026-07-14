@@ -1013,7 +1013,7 @@ background:var(--negro-suave);
 
 .expansion-mapa-contenedor {
     width: 100%;
-    max-width: 620px;
+    max-width: 820px;
     position: relative;
     margin-right: auto;
     margin-left: 0;
@@ -1044,7 +1044,7 @@ background:var(--negro-suave);
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 4vw;
+    padding-left: 2vw;
 }
 
 .expansion-tarjeta-wrap {
@@ -1058,11 +1058,11 @@ background:var(--negro-suave);
 
 .expansion-tarjeta {
     position: absolute;
-    width: min(300px, 78vw);
+    width: min(430px, 78vw);
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
-    padding: 1.6rem 1.7rem;
+    padding: padding: 2.3rem;
     background: rgba(10,10,10,0.88);
     border: 1px solid #232323;
     border-radius: 8px;
@@ -1097,21 +1097,22 @@ background:var(--negro-suave);
 
 .expansion-tarjeta.lado-derecha,
 .expansion-tarjeta.lado-izquierda {
-    left: calc(50% + 40px);
+    left: calc(50% + 120px);
     right: auto;
 }
 
 .expansion-tarjeta-decada {
-    font-family: var(--fuente-cuerpo);
+    font-family: var(--fuente-titulo);
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 1.3rem;
     letter-spacing: 0.28em;
     text-transform: uppercase;
     color: var(--acento);
 }
 
 .expansion-tarjeta p {
-    font-size: clamp(0.85rem, 1.7vw, 0.98rem);
+    font-family: var(--fuente-cuerpo);
+    font-size: clamp(1rem, 1.8vw, 1.15rem);
     font-weight: 300;
     color: var(--blanco);
     line-height: 1.6;
