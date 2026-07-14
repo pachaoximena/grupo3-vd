@@ -296,7 +296,7 @@
     const vb = svg.node().viewBox.baseVal;
     const width = vb.width || 640;
     const height = vb.height || 480;
-    const radius = Math.min(width, height) / 2 - 75;
+    const radius = Math.min(width, height) / 2 - 45;
 
     const g = svg.append("g")
       .attr("transform", `translate(${width / 2},${height / 2 - 30})`);
