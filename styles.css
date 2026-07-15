@@ -921,7 +921,7 @@ background:var(--negro-suave);
    (fondo negro: escena de impacto visual,
    tag dorado + título + texto + collage)
 ══════════════════════════════════════ */
- 
+
 .exposicion-section {
     min-height: 100vh;
     background: var(--blanco-puro);
@@ -931,13 +931,13 @@ background:var(--negro-suave);
     align-items: center;
     padding: 120px 6vw;
 }
- 
+
 .exposicion-header {
     max-width: 850px;
     text-align: center;
     margin-bottom: 60px;
 }
- 
+
 .exposicion-tag {
     display: block;
     margin-bottom: 18px;
@@ -947,7 +947,7 @@ background:var(--negro-suave);
     font-size: .8rem;
     color: var(--dorado);
 }
- 
+
 .exposicion-titulo {
     font-family: var(--fuente-titulo);
     font-size: var(--tam-h1);
@@ -955,7 +955,7 @@ background:var(--negro-suave);
     line-height: 1.1;
     margin-bottom: 25px;
 }
- 
+
 .exposicion-subtitulo {
     max-width: 720px;
     margin: auto;
@@ -964,20 +964,20 @@ background:var(--negro-suave);
     line-height: 1.8;
     color: #666666;
 }
- 
+
 .exposicion-collage {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
 }
- 
+
 .exposicion-collage-img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
- 
+
 @media (max-width: 640px) {
     .exposicion-section { padding: 90px 6vw; }
     .exposicion-collage-img { max-height: 55vh; }
@@ -1193,13 +1193,13 @@ background:var(--negro-suave);
    Franquicias y con el scrollytelling del combo,
    que también son fondo negro)
 ══════════════════════════════════════ */
- 
+
 .combo-intro-header {
     max-width: 1000px;
     text-align: center;
     margin: auto;
 }
- 
+
 .combo-intro-tag {
     display: block;
     margin-bottom: 18px;
@@ -1209,7 +1209,7 @@ background:var(--negro-suave);
     font-size: .8rem;
     color: var(--dorado);
 }
- 
+
 .combo-intro-titulo {
     font-family: var(--fuente-titulo);
     font-size: var(--tam-h1);
@@ -1217,7 +1217,7 @@ background:var(--negro-suave);
     line-height: 1.1;
     margin-bottom: 25px;
 }
- 
+
 .combo-intro-subtitulo {
     max-width: 720px;
     margin: auto;
@@ -1249,9 +1249,6 @@ background:var(--negro-suave);
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .combo-scroll-espaciador {
@@ -1275,10 +1272,7 @@ background:var(--negro-suave);
     width: auto;
     height: auto;
     object-fit: contain;
-    transition: opacity 0.6s ease,
-            transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-            filter 0.6s ease,
-            left 0.8s ease;
+    transition: opacity 0.6s ease, filter 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     filter: brightness(0.45) saturate(0.7);
     opacity: 0;
 }
@@ -1345,7 +1339,7 @@ background:var(--negro-suave);
 
 .combo-img-unificado {
     position: absolute;
-    left: 10%;
+    left: 47%;
     top: 75%;
     max-height: 60%;
     max-width: 80%;
@@ -1381,35 +1375,9 @@ background:var(--negro-suave);
     display: none;
 }
 
-.combo-final-contenido {
-    display:flex;
-    align-items:center;
-    gap:3rem;
-}
-
-
-.combo-final-calorias {
-    display:flex;
-    align-items:center;
-    gap:1.5rem;
-}
-
-
-.combo-igual {
-    font-size: 4rem;
-    color: var(--blanco);
-}
-
-
-.combo-final-km {
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-}
-
 .combo-texto-capa {
     position: absolute;
-    top: 65%;
+    bottom: 18%;
     left: 0;
     width: 100%;
     height: 30%;
@@ -1422,7 +1390,7 @@ background:var(--negro-suave);
 .combo-escena {
     position: absolute;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 0.4rem;
     opacity: 0;
@@ -1547,12 +1515,7 @@ background:var(--negro-suave);
 }
 
 .combo-visual.combo-total-activo {
-    left: 25%;
-}
-
-.combo-total-activo ~ .combo-texto-capa {
-    left: 50%;
-    width: 50%;
+    transform: translateX(-25%);
 }
 
 @media (max-width: 640px) {
@@ -1630,16 +1593,4 @@ background:var(--negro-suave);
     text-align: center;
     opacity: 0;
     transform: translateY(16px);
-}
-
-#escena-7.activa{
-    width: auto;
-
-    left: 58%;
-
-    transform: translateY(-50%);
-
-    top: 48%;
-
-    position:absolute;
 }
