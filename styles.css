@@ -1416,10 +1416,13 @@ color: var(--blanco);
 
 .combo-escena-label {
 font-family: var(--fuente-cuerpo);
-font-size: 0.68rem;
+font-size: var(--tam-h2);
 letter-spacing: 0.3em;
 color: var(--acento);
 font-weight: 700;
+position: relative;
+    left: 200px;   /* mueve a la derecha */
+    top: -150px;   /* mueve hacia arriba */
 }
 
 .combo-escena-cifra {
@@ -1444,7 +1447,7 @@ font-size: clamp(3.5rem, 11vw, 7rem);
 color: var(--acento);
 position: relative;
     left: 200px;   /* mueve a la derecha */
-    top: -130px;   /* mueve hacia arriba */
+    top: -150px;   /* mueve hacia arriba */
 }
 
 .combo-escena-contexto {
