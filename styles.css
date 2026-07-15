@@ -1347,9 +1347,9 @@ transform: translate(-50%, -50%);
 opacity: 0;
 }
 
-.combo-img-unificado.combo-mover-izquierda {
+/*.combo-img-unificado.combo-mover-izquierda {
 left: 25%;
-}
+}*/
 
 .combo-img-unificado.combo-unificado-visible {
 opacity: 1;
