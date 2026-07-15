@@ -1415,9 +1415,9 @@ color: var(--blanco);
 }
 
 .combo-escena-label {
+font-family: var(--fuente-cuerpo);
 font-size: 0.68rem;
 letter-spacing: 0.3em;
-text-transform: uppercase;
 color: var(--acento);
 font-weight: 700;
 }
