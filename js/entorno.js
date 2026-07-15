@@ -324,7 +324,7 @@
 
     const color = d3.scaleOrdinal()
       .domain(DATA.proximidad.map((d) => d.id))
-      .range(["#D89A00", "#EDEDED"]);
+      .range(["#D89A00", "#B8B8B8"]);
 
     const pie = d3.pie().value((d) => d.valor).sort(null).padAngle(0.015);
     const arcs = pie(DATA.proximidad);
