@@ -1382,17 +1382,16 @@ background:var(--negro-suave);
 }
 
 .combo-final-contenido {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
+    display:flex;
+    align-items:center;
+    gap:3rem;
 }
 
 
 .combo-final-calorias {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
 }
 
 
@@ -1403,9 +1402,9 @@ background:var(--negro-suave);
 
 
 .combo-final-km {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
 }
 
 .combo-texto-capa {
@@ -1631,4 +1630,16 @@ background:var(--negro-suave);
     text-align: center;
     opacity: 0;
     transform: translateY(16px);
+}
+
+#escena-7.activa{
+    width: auto;
+
+    left: 58%;
+
+    transform: translateY(-50%);
+
+    top: 48%;
+
+    position:absolute;
 }
