@@ -40,7 +40,7 @@
     const painted = Math.round(eased * TARGET);
     const percent = Math.round(eased * TARGET);
 
-    counter.innerHTML = percent + '<sup>%</sup>';
+    counter.innerHTML = percent;
 
     for(let i=0; i<TOTAL; i++){
       icons[i].classList.toggle('on', i < painted);
