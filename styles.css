@@ -1694,8 +1694,8 @@ transform: translateY(16px);
  
 .conclusion-numero-final {
     font-family: var(--fuente-hero);
-    font-weight: 800;
-    font-size: clamp(1.2rem, 2.6vw, 1.6rem);
+    font-weight: 700;
+    font-size: clamp(1.6rem, 4.5vw, 3rem);
     color: var(--blanco-puro);
 }
  
