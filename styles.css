@@ -1514,7 +1514,7 @@ font-family: var(--fuente-cuerpo);
 font-size: 0.85rem;
 letter-spacing: 0.1em;
 color: var(--blanco);
-top:10px;
+transform: translateY(10px);
 }
 .combo-escena-equivalencia-sub span {
 color: var(--blanco);
