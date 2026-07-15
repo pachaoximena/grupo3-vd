@@ -178,9 +178,21 @@
       if (numEscena !== escenaVisible) {
         escenaVisible = numEscena;
         escenas.forEach(e => {
-          const esEsta = parseInt(e.dataset.escena, 10) === numEscena;
-          e.classList.toggle('activa', esEsta);
-        });
+            const escena = parseInt(e.dataset.escena, 10);
+          
+            let activa = false;
+          
+            if (escena === numEscena) {
+              activa = true;
+            }
+          
+            // La escena 5 permanece visible también en la 6 y 7
+            if (escena === 5 && numEscena >= 5) {
+              activa = true;
+            }
+          
+            e.classList.toggle("activa", activa);
+          });
         actualizarVisual(numEscena);
       }
 
