@@ -1637,3 +1637,12 @@ background:var(--negro-suave);
 .combo-final-km .km-ruta-barra{
     width:360px;
 }
+
+
+ #escena-4{
+    transform: translateX(120px);
+}
+
+#escena-4.activa{
+    transform: translateX(120px) translateY(0);
+}
