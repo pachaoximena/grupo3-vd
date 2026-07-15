@@ -260,7 +260,12 @@
       .join("text")
       .attr("class", "bubble-label")
       .attr("x", (d, i) => cx[i])
-      .attr("y", (d, i) => cy + radius(d.precio) + 28)
+      .attr("y", (d, i) => {
+           if (d.id === "ensalada") {
+             return cy + radius(d.precio) + 15;
+           }
+           return cy + radius(d.precio) + 28;
+         })
       .style("opacity", 0)
       .transition()
       .delay(500)
