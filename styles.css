@@ -1380,7 +1380,7 @@ background:var(--negro-suave);
     bottom: 18%;
     left: 0;
     width: 100%;
-    height: 30%;
+    height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1593,4 +1593,47 @@ background:var(--negro-suave);
     text-align: center;
     opacity: 0;
     transform: translateY(16px);
+}
+
+/* ===== Escena final ===== */
+
+.combo-final-contenido{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:5rem;
+    width:100%;
+}
+
+.combo-final-calorias{
+    display:flex;
+    align-items:center;
+    gap:2rem;
+}
+
+.combo-final-km{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.combo-igual{
+    font-size:5rem;
+    color:var(--blanco);
+    margin:0;
+}
+
+.combo-escena-cifra-total{
+    margin:0;
+    line-height:1;
+}
+
+.combo-escena-cifra-total span{
+    display:block;
+    font-size:1.4rem;
+    color:var(--blanco);
+}
+
+.combo-final-km .km-ruta-barra{
+    width:360px;
 }
