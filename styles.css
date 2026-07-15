@@ -1428,6 +1428,9 @@ font-size: clamp(2.5rem, 6vw, 3.8rem);
 font-weight: 600;
 color: #e63946;
 line-height: 1;
+position: relative;
+    left: 60px;   /* mueve a la derecha */
+    top: -40px;   /* mueve hacia arriba */
 }
 .combo-escena-cifra span {
 font-family: var(--fuente-cuerpo);
