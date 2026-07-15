@@ -1754,3 +1754,25 @@ transform: translateY(16px);
     .conclusion-scroll-espaciador { height: 500vh; }
     .conclusion-final-section { padding: 90px 0; }
 }
+
+/* ══════════════════════════════════════
+    FOOTER
+══════════════════════════════════════ */
+ 
+.site-footer {
+    background: var(--negro);
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+ 
+.site-footer p {
+    font-family: var(--fuente-cuerpo);
+    font-size: .7rem;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: var(--gris2);
+}
+ 
+.site-footer span {
+    color: var(--gris);
+}
