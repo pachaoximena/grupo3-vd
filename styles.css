@@ -1249,6 +1249,9 @@ background:var(--negro-suave);
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .combo-scroll-espaciador {
@@ -1545,7 +1548,12 @@ background:var(--negro-suave);
 }
 
 .combo-visual.combo-total-activo {
-    transform: translateX(-25%);
+    left: 25%;
+}
+
+.combo-total-activo ~ .combo-texto-capa {
+    left: 50%;
+    width: 50%;
 }
 
 @media (max-width: 640px) {
