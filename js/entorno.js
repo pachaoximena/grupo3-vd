@@ -262,7 +262,6 @@
       .attr("x", (d, i) => cx[i])
       .attr("y", (d, i) => cy + radius(d.precio) + 28)
       .style("opacity", 0)
-      .text((d) => "$" + d.precio.toFixed(2))
       .transition()
       .delay(500)
       .duration(500)
