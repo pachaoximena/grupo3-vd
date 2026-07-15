@@ -1452,7 +1452,7 @@ max-width: 540px;
 line-height: 1.7;
 }
 .combo-escena-contexto span {
-font-family: var(--fuente-hero);
+font-family: var(--fuente-cuerpo);
 font-weight: 800;
 color: var(--acento2);
 font-size: 1.3em;
@@ -1469,7 +1469,7 @@ color: var(--gris);
 }
 
 .km-cifra-grande {
-font-family: var(--fuente-hero);
+font-family: var(--fuente-cuerpo);
 font-weight: 800;
 font-size: clamp(2.6rem, 7vw, 4.2rem);
 color: var(--acento2);
