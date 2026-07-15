@@ -1510,11 +1510,11 @@ transition: left 0.1s linear;
 }
 
 .combo-escena-equivalencia-sub {
+font-family: var(--fuente-cuerpo);
 font-size: 0.85rem;
+letter-spacing: 0.1em;
 color: var(--blanco);
-font-weight: 300;
-position: relative;
-    top: 10px;
+top:10px;
 }
 .combo-escena-equivalencia-sub span {
 color: var(--blanco);
