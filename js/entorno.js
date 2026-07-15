@@ -268,6 +268,23 @@
       .duration(500)
       .style("opacity", 1);
 
+     g.selectAll(".bubble-name")
+        .data(DATA.precio)
+        .join("text")
+        .attr("class", "bubble-name")
+        .attr("x", (d, i) => cx[i])
+        .attr("y", (d, i) => cy + radius(d.precio) + 55)
+        .attr("text-anchor", "middle")
+        .style("opacity", 0)
+        .style("font-family", "Inter, sans-serif")
+        .style("font-size", "16px")
+        .style("font-weight", "600")
+        .text((d) => d.label)
+        .transition()
+        .delay(600)
+        .duration(500)
+        .style("opacity", 1);
+
     // nota comparativa sutil
    svg.append("text")
      .attr("x", width / 2)
