@@ -245,13 +245,13 @@
       .ease(d3.easeBackOut.overshoot(1.1))
       .attr("r", (d) => radius(d.precio));
 
-    groups.append("text")
-      .attr("class", "bubble-emoji")
-      .attr("y", -8)
+     groups.append("text")
+      .attr("class", "bubble-price")
+      .attr("y", 8)
       .style("opacity", 0)
-      .text((d) => d.emoji)
+      .text((d) => "$" + d.precio.toFixed(2))
       .transition()
-      .delay(300)
+      .delay(450)
       .duration(500)
       .style("opacity", 1);
 
