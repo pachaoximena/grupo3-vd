@@ -1468,10 +1468,10 @@ font-size: 1.3em;
 gap: 0.9rem;
 }
 .combo-escena-equivalencia-titulo {
+font-family: var(--fuente-cuerpo);
 font-size: 0.85rem;
 letter-spacing: 0.1em;
-text-transform: uppercase;
-color: var(--gris);
+color: var(--blanco);
 }
 
 .km-cifra-grande {
@@ -1511,7 +1511,7 @@ transition: left 0.1s linear;
 
 .combo-escena-equivalencia-sub {
 font-size: 0.85rem;
-color: var(--gris);
+color: var(--blanco);
 font-weight: 300;
 position: relative;
     top: 10px;
@@ -1519,7 +1519,7 @@ position: relative;
 .combo-escena-equivalencia-sub span {
 color: var(--blanco);
 font-weight: 600;
-font-family: var(--fuente-hero);
+font-family: var(--fuente-cuerpo);
 }
 
 .combo-visual.combo-total-activo {
