@@ -1442,6 +1442,9 @@ margin-left: 0.4rem;
 .combo-escena-cifra-total {
 font-size: clamp(3.5rem, 11vw, 7rem);
 color: var(--acento);
+position: relative;
+    left: 100px;   /* mueve a la derecha */
+    top: -80px;   /* mueve hacia arriba */
 }
 
 .combo-escena-contexto {
