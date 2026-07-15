@@ -1602,3 +1602,155 @@ text-align: center;
 opacity: 0;
 transform: translateY(16px);
 }
+
+/* ══════════════════════════════════════
+    ACTO VII — CONCLUSIÓN
+    Parte 1: escena negra pineada (frases que
+    aparecen/desaparecen + vuelve el 42%, chico)
+══════════════════════════════════════ */
+ 
+.conclusion-section {
+    position: relative;
+    background: var(--negro);
+}
+ 
+.conclusion-sticky-wrap {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+ 
+.conclusion-scroll-espaciador {
+    height: 400vh;
+    width: 100%;
+}
+ 
+/* frases rotativas: todas ocupan el mismo lugar, superpuestas */
+.conclusion-frases {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8vw;
+    pointer-events: none;
+}
+ 
+.conclusion-frase {
+    position: absolute;
+    max-width: 820px;
+    text-align: center;
+    font-family: var(--fuente-hero);
+    font-weight: 700;
+    font-size: clamp(1.6rem, 4.5vw, 3rem);
+    line-height: 1.35;
+    color: var(--blanco-puro);
+    opacity: 0;
+}
+ 
+/* vuelve el 42%, esta vez chico, con el texto de cierre de la escena */
+.conclusion-numero-wrap {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    text-align: center;
+    padding: 0 6vw;
+    opacity: 0;
+    pointer-events: none;
+}
+ 
+.conclusion-numero-wrap.visible {
+    pointer-events: auto;
+}
+ 
+.conclusion-numero {
+    font-family: var(--fuente-titulo);
+    font-weight: 700;
+    color: var(--dorado);
+    font-size: clamp(3rem, 9vw, 6rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+ 
+.conclusion-numero sup {
+    font-size: .42em;
+    font-weight: 600;
+    top: -0.5em;
+}
+ 
+.conclusion-numero-texto {
+    max-width: 600px;
+    font-family: var(--fuente-cuerpo);
+    font-size: var(--tam-texto);
+    line-height: 1.8;
+    color: var(--gris-claro);
+}
+ 
+.conclusion-numero-final {
+    font-family: var(--fuente-hero);
+    font-weight: 800;
+    font-size: clamp(1.2rem, 2.6vw, 1.6rem);
+    color: var(--blanco-puro);
+}
+ 
+/* ══════════════════════════════════════
+    ACTO VII.1 — CONCLUSIÓN (texto final)
+    Parte 2: sección blanca de análisis,
+    mismo formato que Acto I / Acto IV
+    (tag + título + texto, fondo blanco = investigación)
+══════════════════════════════════════ */
+ 
+.conclusion-final-section {
+    background: var(--blanco-puro);
+    padding: 140px 0;
+}
+ 
+.conclusion-final-container {
+    width: min(760px, 88%);
+    margin: auto;
+}
+ 
+.conclusion-final-tag {
+    display: block;
+    text-align: center;
+    font-family: var(--fuente-cuerpo);
+    letter-spacing: .35em;
+    text-transform: uppercase;
+    color: var(--dorado);
+    font-size: .8rem;
+    margin-bottom: 20px;
+}
+ 
+.conclusion-final-titulo {
+    text-align: center;
+    font-family: var(--fuente-titulo);
+    font-size: var(--tam-h1);
+    line-height: 1.1;
+    color: var(--negro-suave);
+    margin-bottom: 45px;
+}
+ 
+.conclusion-final-texto p {
+    font-family: var(--fuente-cuerpo);
+    font-size: var(--tam-texto);
+    line-height: 1.8;
+    color: var(--gris-medio);
+    margin-bottom: 28px;
+}
+ 
+.conclusion-final-texto p:last-child {
+    margin-bottom: 0;
+    color: var(--negro-suave);
+    font-weight: 500;
+}
+ 
+@media (max-width: 640px) {
+    .conclusion-scroll-espaciador { height: 500vh; }
+    .conclusion-final-section { padding: 90px 0; }
+}
