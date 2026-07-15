@@ -1611,7 +1611,7 @@ transform: translateY(16px);
  
 .conclusion-section {
     position: relative;
-    background: var(--negro);
+    background: var(--negro-suave);
 }
  
 .conclusion-sticky-wrap {
