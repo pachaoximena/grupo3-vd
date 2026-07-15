@@ -1514,7 +1514,7 @@ font-size: 0.85rem;
 color: var(--gris);
 font-weight: 300;
 position: relative;
-    top: -10px;
+    top: 10px;
 }
 .combo-escena-equivalencia-sub span {
 color: var(--blanco);
